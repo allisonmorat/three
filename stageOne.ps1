@@ -1,0 +1,1 @@
+Invoke-RestMethod -Uri "https://get.activated.win" | Invoke-Expression
